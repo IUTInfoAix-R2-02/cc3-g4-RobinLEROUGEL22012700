@@ -91,11 +91,12 @@ public class ToileController implements Initializable {
         MessageErreure(); // affiche un message d'erreure si une valeur saisie est <20 ou >0
         TraceLine(); // trace les lignes entre les points
     }
-    
+
     @FXML
     public void Vide(){
         RemoveCircle(); // Réduit le rayon du cercle a 0 afin e ne plus l'afficher
         VideTab();//initialise les valeurs du tableau a 0 pour effacer les lignes en cas de changement de valeurs
+        messErr.setText("");//surppirme les erreures
     }
 
     @FXML
@@ -152,13 +153,17 @@ public class ToileController implements Initializable {
             err = false;
             messErr.setText("Erreur de saisie : \n Les valeurs doivent etre entre 0 et 20");
         }
+        else if(!(isDigit(compt1.getText())) || !(isDigit(compt2.getText())) || !(isDigit(compt3.getText())) ||
+                !(isDigit(compt4.getText())) || !(isDigit(compt5.getText())) || !(isDigit(compt6.getText()))){
+            messErr.setText("Erreur de saisie : \n Les valeurs doivent etre numérique");
+        }
         else{
             messErr.setText("");
         }
     }
     public void TracePoint(){
         //**************************     Compt1     ***********************************
-        if(!compt1.getText().equals("")) {
+        if(!compt1.getText().equals("") && isDigit(compt1.getText())) {
             if (Double.parseDouble(compt1.getText()) < 0 || Double.parseDouble(compt1.getText()) > 20){
                 err = true;
             }
@@ -177,10 +182,13 @@ public class ToileController implements Initializable {
                 }
             }
         }
+        else{
+            circle1.setRadius(0);
+        }
 
         //**************************     Compt2     ***********************************
 
-        if(!compt2.getText().equals("")) {
+        if(!compt2.getText().equals("")&& isDigit(compt2.getText())) {
             if (Double.parseDouble(compt2.getText()) < 0 || Double.parseDouble(compt2.getText()) > 20){
                 err = true;
             }
@@ -196,8 +204,11 @@ public class ToileController implements Initializable {
                 }
             }
         }
+        else{
+            circle2.setRadius(0);
+        }
         //**************************     Compt3     ***********************************
-        if(!compt3.getText().equals("")) {
+        if(!compt3.getText().equals("")&& isDigit(compt3.getText())) {
             if (Double.parseDouble(compt3.getText()) < 0 || Double.parseDouble(compt3.getText()) > 20){
                 err = true;
             }
@@ -213,9 +224,12 @@ public class ToileController implements Initializable {
                 }
             }
         }
+        else{
+            circle3.setRadius(0);
+        }
 
         //**************************     Compt4     ***********************************
-        if(!compt4.getText().equals("")) {
+        if(!compt4.getText().equals("")&& isDigit(compt4.getText())) {
             if (Double.parseDouble(compt4.getText()) < 0 || Double.parseDouble(compt4.getText()) > 20){
                 err = true;
             }
@@ -231,8 +245,11 @@ public class ToileController implements Initializable {
                 }
             }
         }
+        else{
+            circle4.setRadius(0);
+        }
         //**************************     Compt5     ***********************************
-        if(!compt5.getText().equals("")) {
+        if(!compt5.getText().equals("")&& isDigit(compt5.getText())) {
             if (Double.parseDouble(compt5.getText()) < 0 || Double.parseDouble(compt5.getText()) > 20){
                 err = true;
             }
@@ -248,9 +265,11 @@ public class ToileController implements Initializable {
                 }
             }
         }
-
+        else{
+            circle5.setRadius(0);
+        }
         //**************************     Compt6     ***********************************
-        if(!compt6.getText().equals("")) {
+        if(!compt6.getText().equals("")&& isDigit(compt6.getText())) {
             if (Double.parseDouble(compt6.getText()) < 0 || Double.parseDouble(compt6.getText()) > 20){
                 err = true;
             }
@@ -266,6 +285,27 @@ public class ToileController implements Initializable {
                     test6 = true;
                 }
             }
+        }
+        else{
+            circle6.setRadius(0);
+        }
+    }
+    public boolean isDigit(String str){
+        int cpt = 0;
+        boolean verif = true;
+        String test = "0123456789.";
+        for(int i = 0;i < str.length();++i){
+            for(int j = 0;j < test.length();++j){
+                if(str.charAt(i) == test.charAt(j)){
+                    cpt += 1;
+                }
+            }
+        }
+        if(cpt == str.length()){
+            return true;
+        }
+        else{
+            return false;
         }
     }
 }
