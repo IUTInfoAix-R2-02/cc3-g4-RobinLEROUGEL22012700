@@ -33,41 +33,41 @@
          <HBox prefHeight="50.0" prefWidth="240.0">
             <children>
                <Label alignment="BOTTOM_LEFT" prefHeight="20.0" prefWidth="200.0" text="Compétence 1 - Réaliser" />
-               <TextField prefHeight="25.0" prefWidth="50.0" />
+               <TextField fx:id="comp1" prefHeight="25.0" prefWidth="50.0" />
             </children></HBox>
          <HBox prefHeight="50.0" prefWidth="240.0">
             <children>
                <Label prefHeight="20.0" prefWidth="200.0" text="Compétence 2 - Optimiser" />
-               <TextField prefHeight="25.0" prefWidth="50.0" />
+               <TextField fx:id="compt2" prefHeight="25.0" prefWidth="50.0" />
             </children></HBox>
          <HBox prefHeight="50.0" prefWidth="240.0">
             <children>
                <Label prefHeight="20.0" prefWidth="200.0" text="Compétence 3 - Administrer" />
-               <TextField prefHeight="25.0" prefWidth="50.0" />
+               <TextField fx:id="compt3" prefHeight="25.0" prefWidth="50.0" />
             </children>
          </HBox>
          <HBox prefHeight="50.0" prefWidth="240.0">
             <children>
                <Label prefHeight="20.0" prefWidth="200.0" text="Compétence 4 - Gérer" />
-               <TextField prefHeight="25.0" prefWidth="50.0" />
+               <TextField fx:id="compt4" prefHeight="25.0" prefWidth="50.0" />
             </children>
          </HBox>
          <HBox prefHeight="50.0" prefWidth="240.0">
             <children>
                <Label prefHeight="20.0" prefWidth="200.0" text="Compétence 5 - Conduire" />
-               <TextField prefHeight="25.0" prefWidth="50.0" />
+               <TextField fx:id="compt5" prefHeight="25.0" prefWidth="50.0" />
             </children>
          </HBox>
          <HBox prefHeight="50.0" prefWidth="240.0">
             <children>
                <Label prefHeight="20.0" prefWidth="200.0" text="Compétence 6 - Collaborer" />
-               <TextField prefHeight="25.0" prefWidth="50.0" />
+               <TextField fx:id="compt6" prefHeight="25.0" prefWidth="50.0" />
             </children>
          </HBox>
          <HBox alignment="CENTER" prefHeight="78.0" prefWidth="239.0" spacing="30.0">
             <children>
-               <Button mnemonicParsing="false" text="Tracer" />
-               <Button mnemonicParsing="false" text="Vider" />
+               <Button id="Tracer"  onAction="#Trace" mnemonicParsing="false" text="Tracer" />
+               <Button id="Vider"  onAction="#Vide" mnemonicParsing="false" text="Vider" />
             </children>
          </HBox>
       </children>

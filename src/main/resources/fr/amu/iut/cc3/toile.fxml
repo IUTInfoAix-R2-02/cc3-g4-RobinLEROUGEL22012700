@@ -33,35 +33,35 @@
          <HBox prefHeight="50.0" prefWidth="240.0">
             <children>
                <Label alignment="BOTTOM_LEFT" prefHeight="20.0" prefWidth="200.0" text="Compétence 1 - Réaliser" />
-               <TextField id="comp1" prefHeight="25.0" prefWidth="50.0" />
+               <TextField fx:id="comp1" prefHeight="25.0" prefWidth="50.0" />
             </children></HBox>
          <HBox prefHeight="50.0" prefWidth="240.0">
             <children>
                <Label prefHeight="20.0" prefWidth="200.0" text="Compétence 2 - Optimiser" />
-               <TextField id="compt2" prefHeight="25.0" prefWidth="50.0" />
+               <TextField fx:id="compt2" prefHeight="25.0" prefWidth="50.0" />
             </children></HBox>
          <HBox prefHeight="50.0" prefWidth="240.0">
             <children>
                <Label prefHeight="20.0" prefWidth="200.0" text="Compétence 3 - Administrer" />
-               <TextField id="compt3" prefHeight="25.0" prefWidth="50.0" />
+               <TextField fx:id="compt3" prefHeight="25.0" prefWidth="50.0" />
             </children>
          </HBox>
          <HBox prefHeight="50.0" prefWidth="240.0">
             <children>
                <Label prefHeight="20.0" prefWidth="200.0" text="Compétence 4 - Gérer" />
-               <TextField id="compt4" prefHeight="25.0" prefWidth="50.0" />
+               <TextField fx:id="compt4" prefHeight="25.0" prefWidth="50.0" />
             </children>
          </HBox>
          <HBox prefHeight="50.0" prefWidth="240.0">
             <children>
                <Label prefHeight="20.0" prefWidth="200.0" text="Compétence 5 - Conduire" />
-               <TextField id="compt5" prefHeight="25.0" prefWidth="50.0" />
+               <TextField fx:id="compt5" prefHeight="25.0" prefWidth="50.0" />
             </children>
          </HBox>
          <HBox prefHeight="50.0" prefWidth="240.0">
             <children>
                <Label prefHeight="20.0" prefWidth="200.0" text="Compétence 6 - Collaborer" />
-               <TextField id="compt6" prefHeight="25.0" prefWidth="50.0" />
+               <TextField fx:id="compt6" prefHeight="25.0" prefWidth="50.0" />
             </children>
          </HBox>
          <HBox alignment="CENTER" prefHeight="78.0" prefWidth="239.0" spacing="30.0">
