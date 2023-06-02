@@ -1,0 +1,16 @@
+
+.toile {
+    -fx-fill: "white";
+    -fx-stroke: "#919090";
+    -fx-stroke-width: 1;
+    -fx-stroke-dash-array: 5 2;
+}
+
+.croix {
+    -fx-stroke: "#919090";
+}
+
+Line {
+    -fx-stroke: "blue";
+    -fx-stroke-width: 2;
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Text?>
+
+
+<HBox id="scene" prefHeight="420.0" prefWidth="650.0" spacing="20.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" >
+    <Pane prefHeight="400.0" prefWidth="400.0" >
+        <Circle centerX="200.0" centerY="200.0" radius="200.0" styleClass="toile"/>
+        <Circle centerX="200.0" centerY="200.0" radius="150.0" styleClass="toile"/>
+        <Circle centerX="200.0" centerY="200.0" radius="100.0" styleClass="toile"/>
+        <Circle centerX="200.0" centerY="200.0" radius="50.0" styleClass="toile"/>
+        <Group layoutX="195.0" layoutY="195.0">
+            <Line endX="10.0" endY="5.0" startY="5.0" styleClass="croix"/>
+            <Line endX="5.0" endY="10.0" startX="5.0" styleClass="croix"/>
+        </Group>
+        <Line startX="200.0" startY="0" endX="200" endY="400.0" styleClass="toile"/>
+        <Line endX="200.0" endY="400.0" rotate="60.0" startX="200.0" styleClass="toile"/>
+        <Line endX="200.0" endY="400.0" rotate="120.0" startX="200.0" styleClass="toile"/>
+        <Text x="170" y="0" text="Compétence 1" />
+        <Text x="300" y="100" text="Compétence 2" />
+        <Text x="300" y="300" text="Compétence 3" />
+        <Text x="170" y="410" text="Compétence 4" />
+        <Text x="26" y="300" text="Compétence 5" />
+        <Text x="26" y="99" text="Compétence 6" />
+        <Pane fx:id="toile" styleClass="toile"/>
+    </Pane>
+</HBox>
