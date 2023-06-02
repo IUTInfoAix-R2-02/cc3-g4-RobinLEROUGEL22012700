@@ -7,7 +7,7 @@
 <?import javafx.scene.text.*?>
 
 <HBox id="scene" prefHeight="440.0" prefWidth="711.0" spacing="20.0" style="-fx-background-color: #bcd0fb;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.amu.iut.cc3.ToileController">
-    <Pane prefHeight="433.0" prefWidth="422.0">
+    <Pane fx:id="graphe" prefHeight="433.0" prefWidth="422.0">
         <Circle centerX="200.0" centerY="200.0" radius="200.0" styleClass="toile" />
         <Circle centerX="200.0" centerY="200.0" radius="150.0" styleClass="toile" />
         <Circle centerX="200.0" centerY="200.0" radius="100.0" styleClass="toile" />
@@ -33,7 +33,7 @@
          <HBox prefHeight="50.0" prefWidth="240.0">
             <children>
                <Label alignment="BOTTOM_LEFT" prefHeight="20.0" prefWidth="200.0" text="Compétence 1 - Réaliser" />
-               <TextField fx:id="comp1" prefHeight="25.0" prefWidth="50.0" />
+               <TextField fx:id="compt1" prefHeight="25.0" prefWidth="50.0" />
             </children></HBox>
          <HBox prefHeight="50.0" prefWidth="240.0">
             <children>
