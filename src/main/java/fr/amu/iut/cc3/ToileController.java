@@ -35,6 +35,13 @@ public class ToileController implements Initializable {
     private static int angleDepart = 90;
     private static int noteMaximale = 20;
 
+    private boolean test1 = false;
+    private boolean test2 = false;
+    private boolean test3 = false;
+    private boolean test4 = false;
+    private boolean test5 = false;
+    private boolean test6 = false;
+
     @FXML
     private Pane graphe = new Pane();
     @FXML
@@ -52,6 +59,12 @@ public class ToileController implements Initializable {
     @FXML
     private Label messErr = new Label("");
 
+    private Circle circle1 = new Circle();
+    private Circle circle2 = new Circle();
+    private Circle circle3 = new Circle();
+    private Circle circle4 = new Circle();
+    private Circle circle5 = new Circle();
+    private Circle circle6 = new Circle();
     private boolean err = false;
 
     @Override
@@ -78,20 +91,28 @@ public class ToileController implements Initializable {
             else {
                 double X1 = getXRadarChart(Double.parseDouble(compt1.getText()), 1);
                 double Y1 = getYRadarChart(Double.parseDouble(compt1.getText()), 1);
-                graphe.getChildren().add(new Circle(X1, Y1, 5));
+                circle1.setCenterX(X1);circle1.setCenterY(Y1);circle1.setRadius(5);
+                if(test1 == false){
+                    graphe.getChildren().add(circle1);
+                    test1 = true;
+                }
             }
         }
 
         //**************************     Compt2     ***********************************
 
         if(!compt2.getText().equals("")) {
-            if (Double.parseDouble(compt2.getText()) < 0 && Double.parseDouble(compt2.getText()) > 20){
+            if (Double.parseDouble(compt2.getText()) < 0 || Double.parseDouble(compt2.getText()) > 20){
                 err = true;
             }
             else {
                 double X2 = getXRadarChart(Double.parseDouble(compt2.getText()), 2);
                 double Y2 = getYRadarChart(Double.parseDouble(compt2.getText()), 2);
-                graphe.getChildren().add(new Circle(X2, Y2, 5));
+                circle2.setCenterX(X2);circle2.setCenterY(Y2);circle2.setRadius(5);
+                if(test2 == false){
+                    graphe.getChildren().add(circle2);
+                    test2 = true;
+                }
             }
         }
         //**************************     Compt3     ***********************************
@@ -102,7 +123,11 @@ public class ToileController implements Initializable {
             else {
                 double X3 = getXRadarChart(Double.parseDouble(compt3.getText()), 3);
                 double Y3 = getYRadarChart(Double.parseDouble(compt3.getText()), 3);
-                graphe.getChildren().add(new Circle(X3, Y3, 5));
+                circle3.setCenterX(X3);circle3.setCenterY(Y3);circle3.setRadius(5);
+                if(test3 == false){
+                    graphe.getChildren().add(circle3);
+                    test3 = true;
+                }
             }
         }
 
@@ -114,7 +139,11 @@ public class ToileController implements Initializable {
             else {
                 double X4 = getXRadarChart(Double.parseDouble(compt4.getText()), 4);
                 double Y4 = getYRadarChart(Double.parseDouble(compt4.getText()), 4);
-                graphe.getChildren().add(new Circle(X4, Y4, 5));
+                circle4.setCenterX(X4);circle4.setCenterY(Y4);circle4.setRadius(5);
+                if(test4 == false){
+                    graphe.getChildren().add(circle4);
+                    test4 = true;
+                }
             }
         }
         //**************************     Compt5     ***********************************
@@ -125,7 +154,11 @@ public class ToileController implements Initializable {
             else {
                 double X5 = getXRadarChart(Double.parseDouble(compt5.getText()), 5);
                 double Y5 = getYRadarChart(Double.parseDouble(compt5.getText()), 5);
-                graphe.getChildren().add(new Circle(X5, Y5, 5));
+                circle5.setCenterX(X5);circle5.setCenterY(Y5);circle5.setRadius(5);
+                if(test5 == false){
+                    graphe.getChildren().add(circle5);
+                    test5 = true;
+                }
             }
         }
 
@@ -137,7 +170,11 @@ public class ToileController implements Initializable {
             else {
                 double X6 = getXRadarChart(Double.parseDouble(compt6.getText()), 6);
                 double Y6 = getYRadarChart(Double.parseDouble(compt6.getText()), 6);
-                graphe.getChildren().add(new Circle(X6, Y6, 5));
+                circle6.setCenterX(X6);circle6.setCenterY(Y6);circle6.setRadius(5);
+                if(test6 == false){
+                    graphe.getChildren().add(circle6);
+                    test6 = true;
+                }
             }
         }
 
@@ -153,6 +190,23 @@ public class ToileController implements Initializable {
     }
     @FXML
     public void Vide(){
+        compt1.setText("");
+        circle1.setRadius(0);
+
+        compt2.setText("");
+        circle2.setRadius(0);
+
+        compt3.setText("");
+        circle3.setRadius(0);
+
+        compt4.setText("");
+        circle4.setRadius(0);
+
+        compt5.setText("");
+        circle5.setRadius(0);
+
+        compt6.setText("");
+        circle6.setRadius(0);
     }
 
 
