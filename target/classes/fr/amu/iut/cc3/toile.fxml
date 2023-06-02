@@ -64,10 +64,14 @@
                <TextField fx:id="compt6" prefHeight="25.0" prefWidth="50.0" />
             </children>
          </HBox>
+         <Label fx:id="messErr" textFill="RED">
+            <font>
+               <Font size="10.0" />
+            </font></Label>
          <HBox alignment="CENTER" prefHeight="78.0" prefWidth="239.0" spacing="30.0">
             <children>
-               <Button id="Tracer"  onAction="#Trace" mnemonicParsing="false" text="Tracer" />
-               <Button id="Vider"  onAction="#Vide" mnemonicParsing="false" text="Vider" />
+               <Button id="Tracer" mnemonicParsing="false" onAction="#Trace" text="Tracer" />
+               <Button id="Vider" mnemonicParsing="false" onAction="#Vide" text="Vider" />
             </children>
          </HBox>
       </children>
