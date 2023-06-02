@@ -46,4 +46,14 @@ public class ToileController implements Initializable {
                 *  (value / noteMaximale));
     }
 
+    @FXML
+    public void Trace(){
+
+    }
+    @FXML
+    public void Vide(){
+
+    }
+
+
 }

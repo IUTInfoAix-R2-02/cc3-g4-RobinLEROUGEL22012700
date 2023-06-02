@@ -1,32 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.Group?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.Pane?>
-<?import javafx.scene.shape.Circle?>
-<?import javafx.scene.shape.Line?>
-<?import javafx.scene.text.Text?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
 
-
-<HBox id="scene" prefHeight="420.0" prefWidth="650.0" spacing="20.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" >
-    <Pane prefHeight="400.0" prefWidth="400.0" >
-        <Circle centerX="200.0" centerY="200.0" radius="200.0" styleClass="toile"/>
-        <Circle centerX="200.0" centerY="200.0" radius="150.0" styleClass="toile"/>
-        <Circle centerX="200.0" centerY="200.0" radius="100.0" styleClass="toile"/>
-        <Circle centerX="200.0" centerY="200.0" radius="50.0" styleClass="toile"/>
+<HBox id="scene" prefHeight="440.0" prefWidth="711.0" spacing="20.0" style="-fx-background-color: #bcd0fb;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.amu.iut.cc3.ToileController">
+    <Pane prefHeight="433.0" prefWidth="422.0">
+        <Circle centerX="200.0" centerY="200.0" radius="200.0" styleClass="toile" />
+        <Circle centerX="200.0" centerY="200.0" radius="150.0" styleClass="toile" />
+        <Circle centerX="200.0" centerY="200.0" radius="100.0" styleClass="toile" />
+        <Circle centerX="200.0" centerY="200.0" radius="50.0" styleClass="toile" />
         <Group layoutX="195.0" layoutY="195.0">
-            <Line endX="10.0" endY="5.0" startY="5.0" styleClass="croix"/>
-            <Line endX="5.0" endY="10.0" startX="5.0" styleClass="croix"/>
+            <Line endX="10.0" endY="5.0" startY="5.0" styleClass="croix" />
+            <Line endX="5.0" endY="10.0" startX="5.0" styleClass="croix" />
         </Group>
-        <Line startX="200.0" startY="0" endX="200" endY="400.0" styleClass="toile"/>
-        <Line endX="200.0" endY="400.0" rotate="60.0" startX="200.0" styleClass="toile"/>
-        <Line endX="200.0" endY="400.0" rotate="120.0" startX="200.0" styleClass="toile"/>
-        <Text x="170" y="0" text="Compétence 1" />
-        <Text x="300" y="100" text="Compétence 2" />
-        <Text x="300" y="300" text="Compétence 3" />
-        <Text x="170" y="410" text="Compétence 4" />
-        <Text x="26" y="300" text="Compétence 5" />
-        <Text x="26" y="99" text="Compétence 6" />
-        <Pane fx:id="toile" styleClass="toile"/>
+        <Line endX="200" endY="400.0" startX="200.0" startY="0" styleClass="toile" />
+        <Line endX="200.0" endY="400.0" rotate="60.0" startX="200.0" styleClass="toile" />
+        <Line endX="200.0" endY="400.0" rotate="120.0" startX="200.0" styleClass="toile" />
+        <Text layoutX="29.0" layoutY="18.0" text="Compétence 1" x="170" y="0" />
+        <Text text="Compétence 2" x="300" y="100" />
+        <Text text="Compétence 3" x="300" y="300" />
+        <Text layoutX="-18.0" layoutY="3.0" text="Compétence 4" x="170" y="410" />
+        <Text text="Compétence 5" x="26" y="300" />
+        <Text text="Compétence 6" x="26" y="99" />
+        <Pane fx:id="toile" styleClass="toile" />
     </Pane>
+   <VBox prefHeight="420.0" prefWidth="239.0">
+      <children>
+         <HBox prefHeight="62.0" prefWidth="239.0" />
+         <HBox prefHeight="50.0" prefWidth="240.0">
+            <children>
+               <Label alignment="BOTTOM_LEFT" prefHeight="20.0" prefWidth="200.0" text="Compétence 1 - Réaliser" />
+               <TextField id="comp1" prefHeight="25.0" prefWidth="50.0" />
+            </children></HBox>
+         <HBox prefHeight="50.0" prefWidth="240.0">
+            <children>
+               <Label prefHeight="20.0" prefWidth="200.0" text="Compétence 2 - Optimiser" />
+               <TextField id="compt2" prefHeight="25.0" prefWidth="50.0" />
+            </children></HBox>
+         <HBox prefHeight="50.0" prefWidth="240.0">
+            <children>
+               <Label prefHeight="20.0" prefWidth="200.0" text="Compétence 3 - Administrer" />
+               <TextField id="compt3" prefHeight="25.0" prefWidth="50.0" />
+            </children>
+         </HBox>
+         <HBox prefHeight="50.0" prefWidth="240.0">
+            <children>
+               <Label prefHeight="20.0" prefWidth="200.0" text="Compétence 4 - Gérer" />
+               <TextField id="compt4" prefHeight="25.0" prefWidth="50.0" />
+            </children>
+         </HBox>
+         <HBox prefHeight="50.0" prefWidth="240.0">
+            <children>
+               <Label prefHeight="20.0" prefWidth="200.0" text="Compétence 5 - Conduire" />
+               <TextField id="compt5" prefHeight="25.0" prefWidth="50.0" />
+            </children>
+         </HBox>
+         <HBox prefHeight="50.0" prefWidth="240.0">
+            <children>
+               <Label prefHeight="20.0" prefWidth="200.0" text="Compétence 6 - Collaborer" />
+               <TextField id="compt6" prefHeight="25.0" prefWidth="50.0" />
+            </children>
+         </HBox>
+         <HBox alignment="CENTER" prefHeight="78.0" prefWidth="239.0" spacing="30.0">
+            <children>
+               <Button id="Tracer"  onAction="#Trace" mnemonicParsing="false" text="Tracer" />
+               <Button id="Vider"  onAction="#Vide" mnemonicParsing="false" text="Vider" />
+            </children>
+         </HBox>
+      </children>
+   </VBox>
 </HBox>
