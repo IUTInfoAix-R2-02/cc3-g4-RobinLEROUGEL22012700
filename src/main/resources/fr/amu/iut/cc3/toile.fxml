@@ -33,35 +33,35 @@
          <HBox prefHeight="50.0" prefWidth="240.0">
             <children>
                <Label alignment="BOTTOM_LEFT" prefHeight="20.0" prefWidth="200.0" text="Compétence 1 - Réaliser" />
-               <TextField fx:id="compt1" prefHeight="25.0" prefWidth="50.0" />
+               <TextField fx:id="compt1" onAction="#actChamp" prefHeight="25.0" prefWidth="50.0" />
             </children></HBox>
          <HBox prefHeight="50.0" prefWidth="240.0">
             <children>
                <Label prefHeight="20.0" prefWidth="200.0" text="Compétence 2 - Optimiser" />
-               <TextField fx:id="compt2" prefHeight="25.0" prefWidth="50.0" />
+               <TextField fx:id="compt2" onAction="#actChamp" prefHeight="25.0" prefWidth="50.0" />
             </children></HBox>
          <HBox prefHeight="50.0" prefWidth="240.0">
             <children>
                <Label prefHeight="20.0" prefWidth="200.0" text="Compétence 3 - Administrer" />
-               <TextField fx:id="compt3" prefHeight="25.0" prefWidth="50.0" />
+               <TextField fx:id="compt3" onAction="#actChamp" prefHeight="25.0" prefWidth="50.0" />
             </children>
          </HBox>
          <HBox prefHeight="50.0" prefWidth="240.0">
             <children>
                <Label prefHeight="20.0" prefWidth="200.0" text="Compétence 4 - Gérer" />
-               <TextField fx:id="compt4" prefHeight="25.0" prefWidth="50.0" />
+               <TextField fx:id="compt4" onAction="#actChamp" prefHeight="25.0" prefWidth="50.0" />
             </children>
          </HBox>
          <HBox prefHeight="50.0" prefWidth="240.0">
             <children>
                <Label prefHeight="20.0" prefWidth="200.0" text="Compétence 5 - Conduire" />
-               <TextField fx:id="compt5" prefHeight="25.0" prefWidth="50.0" />
+               <TextField fx:id="compt5" onAction="#actChamp" prefHeight="25.0" prefWidth="50.0" />
             </children>
          </HBox>
          <HBox prefHeight="50.0" prefWidth="240.0">
             <children>
                <Label prefHeight="20.0" prefWidth="200.0" text="Compétence 6 - Collaborer" />
-               <TextField fx:id="compt6" prefHeight="25.0" prefWidth="50.0" />
+               <TextField fx:id="compt6" onAction="#actChamp" prefHeight="25.0" prefWidth="50.0" />
             </children>
          </HBox>
          <Label fx:id="messErr" textFill="RED">
